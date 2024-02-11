@@ -1,54 +1,46 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 36px;
+    padding-left: 156px;
 }
 
-.field {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+section {
+    margin-bottom: 24px;
 }
 
-.timer {
-    display: flex;
-    gap: 16px;
-}
+#datetime-picker {
+    width: 280px;
 
-.value {
-    font-size: 60px;
-}
-
-input {
+    padding: 8px 16px;
     border-radius: 4px;
-    background-color: #FFF;
-    width: 272px;
-    height: 40px;
     border: 1px solid #808080;
-    color: #2E2F42;
+    background: #FFF;
+    font-family: Montserrat;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-left: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
 }
 
-input:hover {
+#datatime-picker:hover {
     border: 1px solid #000;
 }
 
-input:active {
-    border: 1px solid #4E75FF;
-}
-
-input:disabled {
+#datetime-picker:disabled {
+    background: #fafafa;
     border: 1px solid #808080;
 }
 
 button {
-    display: inline-flex;
+    /* display: flex; */
+    width: 75px;
+    height: 42px;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
+    border: none;
     background-color: #4E75FF;
     color: #FFF;
     font-family: Montserrat;
@@ -56,15 +48,46 @@ button {
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    border: none;
+    letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #6C8CFF;
+    background-color: #6c8cff;
 }
 
 button:disabled {
-    color: #989898;
     background-color: #CFCFCF;
+    color: #989898;
+}
+
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin-top: 32px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.label {
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
 }
