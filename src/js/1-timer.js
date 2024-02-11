@@ -40,10 +40,6 @@ const options = {
     },
 }
 
-
-       
-        
-  
 let countDownInterval;
 
 function startTimer() {
@@ -65,9 +61,8 @@ function updateTimer(endDate) {
     stopTimer();
 }   
 } 
-       
 
- 
+
 function stopTimer() {
     if (countDownInterval) {
         clearInterval(countDownInterval)
@@ -112,11 +107,8 @@ startBtn.addEventListener('click', () => {
     startTimer();
 });
 
-
-
 function addLeadingZero(value) {
     return String(value).padStart(2, '0');
 }
-
 
 const fp = flatpickr(inputTimer, options);
