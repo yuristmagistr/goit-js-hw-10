@@ -17,6 +17,8 @@ const minutesData = document.querySelector('[data-minutes]');
 const secondsData = document.querySelector('[data-seconds]');
 const timer = document.querySelector('.timer');
 
+startBtn.disabled = true; // date unchoosed
+
 let userSelectedDate;
 
 const options = {
